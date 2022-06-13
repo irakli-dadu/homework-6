@@ -1,0 +1,31 @@
+.body1 {
+    width: 100%;
+    height: 960px;
+    position: relative;
+}
+.bg-img {
+    width: 100%;
+}
+.car-img {
+    position: absolute;
+    height: 150px;
+    top: 630px;
+    right: 0;
+    animation: car-move 5s infinite;
+}
+.bikeman {
+    position: absolute;
+    height: 140px;
+    top: 480px;
+    left: 0;
+    animation: bike-move 8s infinite;
+}
+/* keyframe */
+@keyframes car-move {
+    from{right: 0;}
+    to{right: 1500px;}
+}
+@keyframes bike-move {
+    from {left: 0;}
+    to {left: 1500px;}
+}
