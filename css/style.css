@@ -18,7 +18,35 @@
     height: 140px;
     top: 480px;
     left: 0;
-    animation: bike-move 8s infinite;
+    animation: bike-move 6s infinite;
+}
+.bike-boy {
+    position: absolute;
+    height: 120px;
+    top: 480px;
+    right: 0;
+    animation: bikeboy 6s infinite;
+}
+.moon-img {
+    position: absolute;
+    height: 150px;
+    top: 50px;
+    right: 400px;
+    animation: moon-move 7s infinite;
+}
+.meteor-img {
+    position: absolute;
+    height: 50px;
+    top: 10px;
+    right: 0;
+    animation: meteor-move 1.5s infinite;
+}
+.boat-img {
+    position: absolute;
+    height: 100px;
+    top: 200px;
+    left: 50%;
+    animation: fishing 6s infinite alternate;
 }
 /* keyframe */
 @keyframes car-move {
@@ -28,4 +56,27 @@
 @keyframes bike-move {
     from {left: 0;}
     to {left: 1500px;}
+}
+@keyframes bikeboy {
+    0% {right: 0;}
+    30% {right: 250px; top: 470px;}
+    35% {right: 300px; top: 420px;}
+    40% {right: 330px; top: 400px;}
+    45% {right: 355px; top: 380px;}
+    50% {right: 370px; top: 350px;}
+    60% {right: 390px; top: 350px;}
+    70% {right: 1000px; top: 450px;}
+    100% {right: 1500px; top: 480px;}
+}
+@keyframes moon-move {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+@keyframes meteor-move {
+    from {transform: rotate(-35deg);}
+    to {right: 1800px; transform: rotate(-45deg);}
+}
+@keyframes fishing {
+    from {left: 50%;}
+    to {left: 47%;}
 }
